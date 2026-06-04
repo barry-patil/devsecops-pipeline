@@ -64,3 +64,9 @@ sonar-scanner -Dsonar.projectKey=pratik-app
 ## Dockerfile notes
 
 The Dockerfile uses a multi-stage build and runs as a non-root user. Both of these matter for Trivy scan results — the builder stage doesn't end up in the final image, and running as root is flagged as a high severity finding by most container scanners.
+
+---
+
+## Architecture
+
+The full architecture diagram is in [architecture.drawio](./architecture.drawio). Open it at [app.diagrams.net](https://app.diagrams.net) — File → Open from Device → select the file.
